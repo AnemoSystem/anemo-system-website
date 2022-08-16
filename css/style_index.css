@@ -32,8 +32,46 @@ a {
 }
 
 a:hover {
-    color: #11bc27;
+    color: #006025;
 }
+
+.button {
+  display: flex;
+  height: 50px;
+  padding: 0;
+  background: #009578;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #008168;
+}
+
+.button:active {
+  background: #006e58;
+}
+
+.button__text,
+.button__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: #fff;
+  height: 100%;
+}
+
+.button__icon {
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.08);
+}
+
 
 img {
     width: 100%;
@@ -46,7 +84,7 @@ img {
 }
 
 .navbar {
-    font-family: 'Nanum Gothic', cursive;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: rgb(0, 96, 37);
     display: flex;
     justify-content: space-between;
@@ -78,7 +116,6 @@ header img {
 
 main {
     margin-top: 122.3px;
-    margin-bottom: 42px;
     text-align: center;
 }
 
@@ -284,8 +321,9 @@ main {
 }
 
 footer {
-    margin: 60px 0;
+    height: 120px;
     text-align: center;
+    background-color: #0eb952;
 }
 
 footer .social-media {
