@@ -32,6 +32,10 @@ a {
     color: white;
 }
 
+.nav-link:hover {
+    color: #0eb952;
+}
+
 a:hover {
     color: #006025;
 }
