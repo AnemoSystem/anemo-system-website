@@ -125,34 +125,6 @@ main {
     min-height: calc(100vh -947px -947px);
 }
 
-.hashtag {
-    background-image: url("../img/img1.png");
-    background-color: rgb(114, 189, 164);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: 'Days One', sans-serif;
-    color: white;
-    display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	text-align: center;
-    max-width: 100%;
-    height: auto;
-    text-shadow: 2px 2px 8px black;
-}
-
-.hashtag h1 {
-    font-size: 5.6vw;
-    margin-bottom: 20px;
-}
-
-.hashtag p {
-    font-size: 2vw;
-    margin-bottom: 20px;
-}
-
 .myBtn {
     border-radius: 50px;
     padding: 15px;
@@ -240,23 +212,6 @@ main {
     justify-content: center;
 }
 
-.school {
-    font-size: 7vw;
-}
-
-.atom {
-    font-size: 4vw;
-}
-
-#exam-media {
-    display: flex;
-    align-items: center;
-}
-
-#exam-media p {
-    margin-left: 30px;
-}
-
 #img1 {
     background-image: url("../img/img1.png");
     background-size: cover;
@@ -281,49 +236,6 @@ main {
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.labor-market img {
-    width: 30%;
-}
-
-.labor-market-text {
-    font-size: 2vw;
-    text-align: right;
-}
-
-.labor-market-text h1 {
-    font-family: 'Odibee Sans', cursive;
-}
-
-.newsletter {
-    background-color:rgb(114, 189, 164);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-}
-
-.newsletter input {
-    padding: 0 20px;
-    width: 60%;
-    height: 60px;
-    font-size: 30px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
-
-.newsletter i {
-    font-size: 6vw;
-}
-
-.newsletter h1 {
-    font-size: 4vw;
-}
-
-.newsletter h3 {
-    font-size: 1.4vw;
-    margin-bottom: 30px;
 }
 
 footer {
