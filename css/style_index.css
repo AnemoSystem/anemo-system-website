@@ -171,9 +171,14 @@ main {
 }
 
 .img-background {
-    background-color: rgb(45, 80, 68);
-    height: 600px;
+	background-color: rgb(45, 80, 68);
+    height: 500px;
     width: auto;
+}
+
+.prod {
+	background-color: rgb(45, 80, 68);
+	padding: 30px;
 }
 
 h1 {
@@ -181,14 +186,10 @@ h1 {
     font-size: 2em;
 }
 
-.img-background h1 {
-    
-}
-
 .text-img-background {
     font-family: 'Teko', sans-serif;
     z-index: 1;
-    /*font-size: 2vw;*/
+    font-size: 2vw;
     margin-top: 150px;
     color: white;
     /*background-color: rgb(45, 80, 68);*/
@@ -232,7 +233,7 @@ h1 {
 }
 
 footer {
-    height: 120px;
+	padding: 30px;
     text-align: center;
     background-color: #0eb952;
 }
@@ -283,10 +284,6 @@ footer .social-media {
 }
 
 @media(max-width: 1200px){
-    .type-images {
-        flex-direction: column;
-    }
-
     .text-content {
         font-size: 1.3em;
         width: 80%;
@@ -344,6 +341,10 @@ footer .social-media {
 }
 
 @media(max-width: 700px){
+	 .type-images {
+        flex-direction: column;
+    }
+	
 	.navbar img {
         margin-bottom: 15px;
     }
