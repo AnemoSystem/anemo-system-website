@@ -4,21 +4,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Teko&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css/style_index.css">
-        <link rel="shortcut icon" href="img/icon.ico"/> 
+        <link rel="shortcut icon" href="img/icon.ico"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/jquery.js" type="text/javascript"></script>
         <title>School Game - Anemo System</title>
     </head>
     <body>
         <header>
-            <nav class="navbar"> <!--copiar a versao atualizada em "index.html"-->
+            <nav class="navbar">
                 <a href="index.html"><img src="img/logo.png"></a>
                 <ul>
-                    <a class="nav-link" href="index.html"><li>Quem nós somos</li></a>
-                    <a class="nav-link" href="index.html"><li>Produções</li></a>
-                    <a class="nav-link" href="index.html"><li>Redes sociais</li></a>
-                    <a class="nav-link" href="blog.html"><li>Notícias</li></a>
-                    
+                    <li><a class="nav-link" href="index.html#about">Sobre</a></li>
+                    <li><a class="nav-link" href="index.html#prod">Produções</a></li>
+                    <li><a class="nav-link" href="#footer">Redes sociais</a></li>
+                    <li><a class="nav-link" href="blog.html">Notícias</a></li>
                 </ul>
+                <a style="font-size: 30px;" id="myIcon" class="icon" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="mySidenav" class="sidenav">
+                    <a onclick="closeNav()" class="nav-link" href="index.html#about">Sobre</a>
+                    <a onclick="closeNav()" class="nav-link" href="index.html#prod">Produções</a>
+                    <a onclick="closeNav()" class="nav-link" href="index.html#footer">Redes sociais</a>
+                    <a onclick="closeNav()" class="nav-link" href="blog.html">Notícias</a>
+                  </div>
             </nav>
         </header>
         <main>
@@ -44,12 +57,13 @@
               <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
                     
         </main>
-        <footer> <!--copiar a versao atualizada em "index.html"-->
-            <div class="social-media">
+        <footer>
+            <div id="footer" class="social-media">
                 <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
                 <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
                 <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
                 <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/GGGCD-TCC"><i class="fab fa-github"></i></a>
             </div>
             <p>2022 © Anemo System<br><!-- texto que vai embaixo do copyright --></p>
         </footer>
