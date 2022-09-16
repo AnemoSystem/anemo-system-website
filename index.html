@@ -13,12 +13,20 @@
             <nav class="navbar">
                 <a href="index.html"><img src="img/logo.png"></a>
                 <ul>
-                    <a class="nav-link" href="#about"><li>Quem nós somos</li></a>
-                    <a class="nav-link" href="#prod"><li>Produções</li></a>
-                    <a class="nav-link" href="#footer"><li>Redes sociais</li></a>
-                    <a class="nav-link" href="blog.html"><li>Notícias</li></a>
-                    
+                    <li><a class="nav-link" href="#about">Sobre</a></li>
+                    <li><a class="nav-link" href="#prod">Produções</a></li>
+                    <li><a class="nav-link" href="#footer">Redes sociais</a></li>
+                    <li><a class="nav-link" href="blog.html">Notícias</a></li>
                 </ul>
+                <a style="font-size: 30px;" id="myIcon" class="icon" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="mySidenav" class="sidenav">
+                    <a onclick="closeNav()" class="nav-link" href="#about">Sobre</a>
+                    <a onclick="closeNav()" class="nav-link" href="#prod">Produções</a>
+                    <a onclick="closeNav()" class="nav-link" href="#footer">Redes sociais</a>
+                    <a onclick="closeNav()" class="nav-link" href="blog.html">Notícias</a>
+                  </div>
             </nav>
         </header>
         <main>
@@ -62,8 +70,20 @@
                 <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
                 <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
                 <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/GGGCD-TCC"><i class="fab fa-github"></i></a>
             </div>
             <p>2022 © Anemo System<br><!-- texto que vai embaixo do copyright --></p>
         </footer>
+        <script type="text/javascript">
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            } 
+        </script>
     </body>
 </html>

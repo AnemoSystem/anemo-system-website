@@ -248,6 +248,47 @@ footer .social-media {
     font-size: 2.5vw;
 }
 
+#myIcon {
+    display: none;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 @media(max-width: 1200px){
     .hashtag p {
         font-size: 3vw;
@@ -262,38 +303,12 @@ footer .social-media {
         font-size: 2.7vw;
     }
 
-    .newsletter i {
-        font-size: 12vw;
-    }
-
-    .newsletter h1 {
-        font-size: 5vw;
-    }
-
-    .newsletter h3 {
-        font-size: 2vw;
-    }
-
     footer .social-media {
         font-size: 4.3vw;
     }
 
     .img-section {
         width: 90%;
-    }
-
-    .labor-market {
-        padding-right: 40px;
-    }
-
-    .labor-market img {
-        width: 70%;
-    }
-
-    .newsletter h3 {
-        font-size: 3vw;
-        padding: 10px;
-        text-align: center;
     }
 
     .myBtn {
@@ -328,6 +343,9 @@ footer .social-media {
         font-size: 8vw;
         width: 60vw;
     }
+
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 @media(max-width: 700px){
@@ -342,10 +360,18 @@ footer .social-media {
     .navbar li {
         padding: 0px 20px;
     }
-
+    
 	.navbar {
         font-size: 80%;
-        flex-direction: column;
+        /*flex-direction: column;*/
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    #myIcon {
+        display: inline;
     }
 
     .hashtag p {
@@ -382,48 +408,6 @@ footer .social-media {
         width: 100vw;
         font-size: 5vw;
         text-align: center;
-    }
-
-    .labor-market {
-        flex-direction: column;
-    }
-
-    .labor-market img {
-        width: 70%;
-    }
-
-    .labor-market p {
-        font-size: 5vw;
-        text-align: center;
-    }
-
-    .labor-market h1 {
-        font-size: 6vw;
-        text-align: center;
-    }
-
-    .labor-market .myBtn {
-        margin-right: 35%;
-        margin-top: 20px;
-    }
-
-    .newsletter i {
-        font-size: 15vw;
-    }
-
-    .newsletter h1 {
-        font-size: 8vw;
-    }
-
-    .newsletter h3 {
-        font-size: 5vw;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .newsletter input {
-        width: 90%;
-        font-size: 20px;
     }
     
     footer .social-media {
