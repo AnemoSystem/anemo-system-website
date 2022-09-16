@@ -341,10 +341,6 @@ footer .social-media {
 }
 
 @media(max-width: 700px){
-	 .type-images {
-        flex-direction: column;
-    }
-	
 	.navbar img {
         margin-bottom: 15px;
     }
@@ -417,5 +413,16 @@ footer .social-media {
 
     .atom {
         font-size: 9vw;
+    }
+	   
+	.ty-1, .ty-2 {
+		align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px){
+	.type-images {
+        flex-direction: column;
     }
 }
