@@ -18,6 +18,12 @@ body {
     min-height: 100vh;
 }
 
+.prod {
+    background-color: rgb(45, 80, 68);
+	padding: 30px;
+    color: white;
+}
+
 ul {
     list-style-type: none;
 }
@@ -84,12 +90,12 @@ img {
 }
 
 .navbar {
-    /*font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;*/
     background-color: rgb(0, 96, 37);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
+    padding: 20px 60px 0px;
+
     text-align: center;
 }
 
@@ -106,7 +112,7 @@ header ul {
 }
 
 header img {
-    width: 75px;
+    width: 110px;
 }
 
 .navbar li {
@@ -142,6 +148,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .about i {
@@ -172,13 +179,8 @@ main {
 
 .img-background {
 	background-color: rgb(45, 80, 68);
-    height: 500px;
+    height: 650px;
     width: auto;
-}
-
-.prod {
-	background-color: rgb(45, 80, 68);
-	padding: 30px;
 }
 
 h1 {
@@ -191,7 +193,7 @@ h1 {
     font-family: 'Teko', sans-serif;
     z-index: 1;
     font-size: 3vw;
-    margin-top: 100px;
+    margin-top: 130px;
     color: white;
     /*background-color: rgb(45, 80, 68);*/
     position: absolute;
@@ -205,6 +207,15 @@ h1 {
 }
 
 #img1 {
+    background-image: url("../img/printgame.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    opacity: 0.5;
+}
+
+#img2 {
     background-image: url("../img/printgame.jpg");
     background-size: cover;
     background-repeat: no-repeat;
