@@ -17,16 +17,18 @@
         <header>
             <nav class="navbar">
                 <a href="index.html">
-                    <!-- Cabeçalho -->
                     <div class="header">
                         <img src="img/logo.png" alt="AnemoSystem Logo" loading="lazy">
                     </div>
                 </a>
                 <ul>
-                    <li><a class="nav-link" href="#about">Sobre</a></li>
+                    
+                    <li2><a class="nav-link" href="#about">Sobre</a></li2>
                     <li><a class="nav-link" href="#prod">Produções</a></li>
                     <li><a class="nav-link" href="#footer">Redes sociais</a></li>
                     <li><a class="nav-link" href="blog.html">Notícias</a></li>
+                    <li><a class="nav-link" href="">Time</a></li>
+                    
                 </ul>
                 <a style="font-size: 30px;" id="myIcon" class="icon" onclick="openNav()">
                     <i class="fa fa-bars"></i>
@@ -36,6 +38,7 @@
                     <a onclick="closeNav()" class="nav-link" href="#prod">Produções</a>
                     <a onclick="closeNav()" class="nav-link" href="#footer">Redes sociais</a>
                     <a onclick="closeNav()" class="nav-link" href="blog.html">Notícias</a>
+                    <a onclick="closeNav()" class="nav-link" href="">Time</a>
                   </div>
             </nav>
         </header>
@@ -46,6 +49,7 @@
                 </div>
                 <div id="img1"></div>
             </section>
+            <br><br>
         <div id="about" class="about">
             <h1>O que é a Anemo System?</h1>
         </div>
@@ -55,8 +59,9 @@
                 Nossos produtos possuem a finalidade de serem ferramentas úteis para o dia-a-dia de todos os usuários.<br>
                 Somos uma empresa independente, que através dos valores sustentáveis, construímos diversas formas de trabalhar<br>
                 com os computadores. Seja mobile, seja desktop, a Anemo System está sempre tentando inovar em seus softwares.<br>
-            </p><br>
+            </p>
         </section>
+        <br><br>
         <section id="prod" class="prod">
             <h1 style="font-size: 4.2em;"> Produções</h1>
             <h2>Confira aqui nosso portifólio!</h2>
@@ -82,6 +87,7 @@
                     </figure>
                 </span>
             </div>
+            <br><br>
         </section>
         </main>
         <footer>
@@ -95,12 +101,10 @@
             <p>2022 © Anemo System<br><!-- texto que vai embaixo do copyright --></p>
         </footer>
         <script type="text/javascript">
-            /* Set the width of the side navigation to 250px */
             function openNav() {
                 document.getElementById("mySidenav").style.width = "250px";
             }
 
-            /* Set the width of the side navigation to 0 */
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
             } 
