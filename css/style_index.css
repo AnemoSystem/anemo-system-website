@@ -44,14 +44,15 @@ a:hover {
 
 .button {
   display: flex;
-  height: 50px;
+  height: 80px;
+  width: 215px;
   padding: 0;
   background: #009578;
   border: none;
   outline: none;
   border-radius: 5px;
   overflow: hidden;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   cursor: pointer;
 }
@@ -228,20 +229,21 @@ h1 {
 
 .imagesection {
     width: 100%;
+    flex-direction: row;
 }
 
-.imagesection .left {
+.left {
     width: 40%;
     height: 40%;
     position: relative;
     left: 5%;
 }
 
-.imagesection .right {
+.right {
     width: 40%;
     height: 40%;
     position: relative;
-    left: 55%;
+    left: 15%;
 }
 
 .type-images {
