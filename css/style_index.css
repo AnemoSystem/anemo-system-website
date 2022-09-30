@@ -24,6 +24,11 @@ body {
     color: white;
 }
 
+h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
 ul {
     list-style-type: none;
 }
@@ -79,24 +84,18 @@ a:hover {
   background: rgba(0, 0, 0, 0.08);
 }
 
-
-img {
-    width: 100%;
+.myBtn {
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 2vh;
+    min-width: 50px;
+    max-width: 300px;
+    background-color: white;
 }
 
-.img-section {
-    margin: 50px;
-    width: 30%;
-    border-radius: 20px;
-}
-
-.navbar {
-    background: -webkit-gradient(linear, left top, right top, from(#006025), to(#00BD48), to(#00A33F));
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 40px;
-    text-align: center;
+.myBtn:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 header {
@@ -125,24 +124,55 @@ header img {
     font-size: 1.3em;
 }
 
+img {
+    width: 100%;
+}
+
+.img-background {
+	background-color: #005420;
+    height: 650px;
+    width: auto;
+}
+
+.text-img-background {
+	-webkit-text-stroke: 1px #004B39;
+    font-family: 'Teko', sans-serif;
+    z-index: 1;
+    font-size: 3.5vw;
+    margin-top: 130px;
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 60vw;
+    justify-content: center;
+}
+
+#img1 {
+    background-image: url("../img/printgame.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.navbar {
+    background: -webkit-gradient(linear, left top, right top, from(#006025), to(#00BD48), to(#00A33F));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    text-align: center;
+}
+
 main {
     margin-top: 122.3px;
     text-align: center;
     min-height: calc(100vh -947px -947px);
-}
-
-.myBtn {
-    border-radius: 50px;
-    padding: 15px;
-    font-size: 2vh;
-    min-width: 50px;
-    max-width: 300px;
-    background-color: white;
-}
-
-.myBtn:hover {
-    cursor: pointer;
-    opacity: 0.8;
 }
 
 .about {
@@ -181,71 +211,6 @@ main {
     text-align: right;
 }
 
-.img-background {
-	background-color: #005420;
-    height: 650px;
-    width: auto;
-}
-
-h1 {
-    font-family: 'Teko', sans-serif;
-    font-size: 2em;
-}
-
-.text-img-background {
-	-webkit-text-stroke: 1px #004B39;
-    font-family: 'Teko', sans-serif;
-    z-index: 1;
-    font-size: 3.5vw;
-    margin-top: 130px;
-    color: white;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    width: 60vw;
-    justify-content: center;
-}
-
-#img1 {
-    background-image: url("../img/printgame.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    opacity: 0.5;
-}
-
-#img2 {
-    background-image: url("../img/printgame.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    opacity: 0.5;
-}
-
-.imagesection {
-    width: 100%;
-    flex-direction: row;
-}
-
-.left {
-    width: 40%;
-    height: 40%;
-    position: relative;
-    left: 5%;
-}
-
-.right {
-    width: 40%;
-    height: 40%;
-    position: relative;
-    left: 15%;
-}
-
 .type-images {
     display: flex;
     flex-direction: row;
@@ -266,6 +231,20 @@ h1 {
     margin: 20px;
 }
 
+.left {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 5%;
+}
+
+.right {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 15%;
+}
+
 footer {
 	padding: 30px;
     text-align: center;
@@ -281,19 +260,19 @@ footer .social-media {
 }
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #111; 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
 }
 
-/* The navigation menu links */
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -303,12 +282,10 @@ footer .social-media {
     transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
