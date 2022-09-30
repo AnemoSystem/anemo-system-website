@@ -227,25 +227,6 @@ h1 {
     opacity: 0.5;
 }
 
-.imagesection {
-    width: 100%;
-    flex-direction: row;
-}
-
-.left {
-    width: 40%;
-    height: 40%;
-    position: relative;
-    left: 5%;
-}
-
-.right {
-    width: 40%;
-    height: 40%;
-    position: relative;
-    left: 15%;
-}
-
 .type-images {
     display: flex;
     flex-direction: row;
@@ -264,6 +245,20 @@ h1 {
     background-color: #059954;
     padding: 20px;
     margin: 20px;
+}
+
+.left {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 5%;
+}
+
+.right {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 15%;
 }
 
 footer {
