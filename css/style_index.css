@@ -19,9 +19,33 @@ body {
 }
 
 .prod {
-    background-color: rgb(45, 80, 68);
+    background: -webkit-gradient(linear, left top, right top, from(#02381F), to(#03733F), to(#048C4D));
 	padding: 30px;
     color: white;
+}
+
+.prod h1 {
+    font-size: 4vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.prod h2 {
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
 }
 
 ul {
@@ -31,10 +55,11 @@ ul {
 a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 .nav-link:hover {
-    color: #0eb952;
+    color: #00DB8C;
 }
 
 a:hover {
@@ -43,15 +68,15 @@ a:hover {
 
 .button {
   display: flex;
-  height: 50px;
+  height: 80px;
+  width: 215px;
   padding: 0;
   background: #009578;
   border: none;
   outline: none;
   border-radius: 5px;
   overflow: hidden;
-  /*font-family: "Quicksand", sans-serif;*/
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   cursor: pointer;
 }
@@ -63,6 +88,8 @@ a:hover {
 .button:active {
   background: #006e58;
 }
+
+/* !!! Usado no botão de download do jogo !!! */
 
 .button__text,
 .button__icon {
@@ -76,27 +103,6 @@ a:hover {
 .button__icon {
   font-size: 1.5em;
   background: rgba(0, 0, 0, 0.08);
-}
-
-
-img {
-    width: 100%;
-}
-
-.img-section {
-    margin: 50px;
-    width: 30%;
-    border-radius: 20px;
-}
-
-.navbar {
-    background-color: rgb(0, 96, 37);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px 0px;
-
-    text-align: center;
 }
 
 header {
@@ -116,29 +122,59 @@ header img {
 }
 
 .navbar li {
-    padding: 0px 30px;
+    padding: 0px 25px;
     font-size: 1.3em;
+}
+
+img {
+    width: 100%;
+}
+
+.img-background {
+	background-color: #005420;
+    height: 650px;
+    width: auto;
+}
+
+.text-img-background {
+	-webkit-text-stroke: 1px #004B39;
+    font-family: 'Teko', sans-serif;
+    z-index: 1;
+    font-size: 3.5vw;
+    margin-top: 130px;
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 60vw;
+    justify-content: center;
+}
+
+#img1 {
+    background-image: url("../img/printgame.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.navbar {
+    background: -webkit-gradient(linear, left top, right top, from(#006025), to(#00BD48), to(#00A33F));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    text-align: center;
 }
 
 main {
     margin-top: 122.3px;
     text-align: center;
     min-height: calc(100vh -947px -947px);
-}
-
-.myBtn {
-    border-radius: 50px;
-    padding: 15px;
-    /*font-family: 'Poiret One', cursive;*/
-    font-size: 2vh;
-    min-width: 50px;
-    max-width: 300px;
-    background-color: white;
-}
-
-.myBtn:hover {
-    cursor: pointer;
-    opacity: 0.8;
 }
 
 .about {
@@ -156,72 +192,14 @@ main {
     padding: 30px;
 }
 
+
 .text-content {
     display: flex;
     align-items: center;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     margin-bottom: 30px;
     text-align: center;
     justify-content: center;
-}
-
-.pre-1 {
-    align-self: flex-start;
-    flex-direction: row;
-    text-align: left;
-}
-
-.pre-2 {
-    align-self: flex-end;
-    flex-direction: row-reverse;
-    text-align: right;
-}
-
-.img-background {
-	background-color: rgb(45, 80, 68);
-    height: 650px;
-    width: auto;
-}
-
-h1 {
-    font-family: 'Teko', sans-serif;
-    font-size: 2em;
-}
-
-.text-img-background {
-	-webkit-text-stroke: 1px black;
-    font-family: 'Teko', sans-serif;
-    z-index: 1;
-    font-size: 3vw;
-    margin-top: 130px;
-    color: white;
-    /*background-color: rgb(45, 80, 68);*/
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    width: 50vw;
-    justify-content: center;
-}
-
-#img1 {
-    background-image: url("../img/printgame.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    opacity: 0.5;
-}
-
-#img2 {
-    background-image: url("../img/printgame.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    opacity: 0.5;
 }
 
 .type-images {
@@ -239,10 +217,32 @@ h1 {
 .img-section {
     width: 60%;
     text-align: center;
-    background-color: rgb(83, 141, 121);
+    background-color: #059954;
     padding: 20px;
     margin: 20px;
 }
+
+/* Imagem direita e esquerda do jogo (pagina de Download) */
+
+.left {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    font-size: 1.4vw;
+    text-align: center;
+
+    left: 5%;
+}
+
+.right {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    font-size: 1.4vw;
+    text-align: center;
+    left: 15%;
+}
+
 
 footer {
 	padding: 30px;
@@ -259,19 +259,19 @@ footer .social-media {
 }
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #111; 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
 }
 
-/* The navigation menu links */
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -281,12 +281,10 @@ footer .social-media {
     transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -303,20 +301,12 @@ footer .social-media {
         margin-right: auto;
     }
 
-    .labor-market-text {
-        font-size: 2.7vw;
-    }
-
     footer .social-media {
         font-size: 4.3vw;
     }
 
     .img-section {
         width: 90%;
-    }
-
-    .myBtn {
-        font-size: 2vw;
     }
 
     .about {
@@ -329,18 +319,6 @@ footer .social-media {
 
     .text-section p {
         font-size: 2vw;
-    }
-
-    .school {
-        font-size: 9vw;
-    }
-
-    .atom {
-        font-size: 5vw;
-    }
-
-    #exam-media p {
-        margin-left: 10px;
     }
 
     .img-background h1 {
@@ -372,11 +350,6 @@ footer .social-media {
 
     #myIcon {
         display: inline;
-    }
-
-    .hashtag p {
-        font-size: 5vw;
-        margin-bottom: 20px;
     }
 
     .text-content {
@@ -415,18 +388,6 @@ footer .social-media {
         font-size: 10vw;
     }
 
-    .myBtn {
-        font-size: 4vw;
-    }
-
-    .school {
-        font-size: 30vw;
-    }
-
-    .atom {
-        font-size: 9vw;
-    }
-	   
 	.ty-1, .ty-2 {
 		align-items: center;
         flex-direction: column;
