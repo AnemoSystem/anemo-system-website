@@ -24,6 +24,25 @@ body {
     color: white;
 }
 
+.prod h1 {
+    font-size: 4vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.prod h2 {
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
 h1 {
     font-family: 'Teko', sans-serif;
     font-size: 2em;
@@ -193,7 +212,7 @@ main {
 .text-content {
     display: flex;
     align-items: center;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     margin-bottom: 30px;
     text-align: center;
     justify-content: center;
@@ -235,6 +254,9 @@ main {
     width: 40%;
     height: 40%;
     position: relative;
+    font-size: 1.4vw;
+    text-align: center;
+
     left: 5%;
 }
 
@@ -242,6 +264,8 @@ main {
     width: 40%;
     height: 40%;
     position: relative;
+    font-size: 1.4vw;
+    text-align: center;
     left: 15%;
 }
 
