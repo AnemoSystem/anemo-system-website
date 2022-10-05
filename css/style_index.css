@@ -103,20 +103,6 @@ a:hover {
   background: rgba(0, 0, 0, 0.08);
 }
 
-.myBtn {
-    border-radius: 50px;
-    padding: 15px;
-    font-size: 2vh;
-    min-width: 50px;
-    max-width: 300px;
-    background-color: white;
-}
-
-.myBtn:hover {
-    cursor: pointer;
-    opacity: 0.8;
-}
-
 header {
     position:fixed;
     width: 100%;
@@ -171,7 +157,7 @@ img {
 }
 
 #img1 {
-    background-image: url("../img/printgame.jpg");
+    background-image: url("../img/printgame.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -216,18 +202,6 @@ main {
     margin-bottom: 30px;
     text-align: center;
     justify-content: center;
-}
-
-.pre-1 {
-    align-self: flex-start;
-    flex-direction: row;
-    text-align: left;
-}
-
-.pre-2 {
-    align-self: flex-end;
-    flex-direction: row-reverse;
-    text-align: right;
 }
 
 .type-images {
@@ -326,20 +300,12 @@ footer .social-media {
         margin-right: auto;
     }
 
-    .labor-market-text {
-        font-size: 2.7vw;
-    }
-
     footer .social-media {
         font-size: 4.3vw;
     }
 
     .img-section {
         width: 90%;
-    }
-
-    .myBtn {
-        font-size: 2vw;
     }
 
     .about {
@@ -352,18 +318,6 @@ footer .social-media {
 
     .text-section p {
         font-size: 2vw;
-    }
-
-    .school {
-        font-size: 9vw;
-    }
-
-    .atom {
-        font-size: 5vw;
-    }
-
-    #exam-media p {
-        margin-left: 10px;
     }
 
     .img-background h1 {
@@ -395,11 +349,6 @@ footer .social-media {
 
     #myIcon {
         display: inline;
-    }
-
-    .hashtag p {
-        font-size: 5vw;
-        margin-bottom: 20px;
     }
 
     .text-content {
@@ -438,18 +387,6 @@ footer .social-media {
         font-size: 10vw;
     }
 
-    .myBtn {
-        font-size: 4vw;
-    }
-
-    .school {
-        font-size: 30vw;
-    }
-
-    .atom {
-        font-size: 9vw;
-    }
-	   
 	.ty-1, .ty-2 {
 		align-items: center;
         flex-direction: column;
