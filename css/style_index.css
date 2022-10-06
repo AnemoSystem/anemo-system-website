@@ -19,7 +19,7 @@ body {
 }
 
 .prod {
-    background: -webkit-gradient(linear, left top, right top, from(#02381F), to(#03733F), to(#048C4D));
+    background: -webkit-gradient(linear, left top, right top, from(#02381F), to(#077a45), to(#09aa5f));
 	padding: 30px;
     color: white;
 	
