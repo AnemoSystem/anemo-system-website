@@ -19,7 +19,7 @@ body {
 }
 
 .prod {
-    background: -webkit-gradient(linear, left top, right top, from(#02381F), to(#03733F), to(#048C4D));
+    background: -webkit-gradient(linear, left top, right top, from(#02381F), to(#077a45), to(#09aa5f));
 	padding: 30px;
     color: white;
 	
@@ -193,6 +193,10 @@ main {
 	height: 100px;
 }
 
+.space-octopus {
+	height: 60px;
+}
+
 .about i {
     font-size: 4vw;
     padding: 30px;
@@ -230,8 +234,8 @@ main {
 /* Imagem direita e esquerda do jogo (pagina de Download) */
 
 .left {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
     position: relative;
     font-size: 1.4vw;
     text-align: center;
@@ -240,12 +244,42 @@ main {
 }
 
 .right {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    font-size: 1.4vw;
+    text-align: center;
+    left: 15%;
+}
+
+.right-custom {
+    width: 40%;
+    height: 40%;
+    position: relative;    
+    left: 10%;
+}
+
+.right-text {
     width: 40%;
     height: 40%;
     position: relative;
     font-size: 1.4vw;
     text-align: center;
-    left: 15%;
+    left: 8%;
+}
+
+.book {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-book {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    margin-bottom: 60px;
 }
 
 
@@ -301,9 +335,23 @@ footer .social-media {
 @media(max-width: 1200px){
     .text-content {
         font-size: 1.3em;
-        width: 80%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .right-text, .left, .right, .right-custom {
+        font-size: 1.3em;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        left: 5%;
+    }
+
+    .img-book {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
     }
 
     footer .social-media {
@@ -350,7 +398,6 @@ footer .social-media {
     
 	.navbar {
         font-size: 80%;
-        /*flex-direction: column;*/
     }
 
     .navbar ul {
@@ -366,7 +413,34 @@ footer .social-media {
         font-size: 3.3vw;
         text-align: center;
         padding: 30px;
-        width: 90%;
+        width: 100%;
+    }
+
+    .ty-1, .ty-2 {
+        flex-direction: column;
+    }
+
+    .right-text, .left, .right{
+        flex-direction: column;
+        padding: 10px;
+        font-size: 3.3vw;
+        width: 80%;
+    }
+
+    .ty-2 .left{
+        width: 100%;
+        left: 0%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ty-2 .right-custom{
+        width: 100%;
+        left: 0%;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
     }
 	
     .img-section {
@@ -404,12 +478,7 @@ footer .social-media {
     footer .social-media {
         font-size: 10vw;
     }
-
-	.ty-1, .ty-2{
-		align-items: center;
-        flex-direction: column;
-    }
-	
+ 
 	.prod {
 		align-items: center;
         flex-direction: row;
@@ -419,5 +488,5 @@ footer .social-media {
 	.type-images {
         flex-direction: column;
     }
-} 
+}
 }
