@@ -18,8 +18,9 @@
             <nav class="navbar">
                 <a href="index.html"><img src="img/logo.png"></a>
                 <ul>
-                    <li><a class="nav-link" href="index.html">Início</a></li>
-                    <li><a class="nav-link" href="#footer">Redes sociais</a></li>
+                    <li><a class="nav-link" href="index.html">Página Inicial</a></li>
+                    <li><a class="nav-link" href="#octopus">Sobre</a></li>
+                    <li><a class="nav-link" href="#download">Download</a></li>
                     <li><a class="nav-link" href="blog.html">Notícias</a></li>
                     <li><a class="nav-link" href="">Time</a></li>
                 </ul>
@@ -27,8 +28,9 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <div id="mySidenav" class="sidenav">
-                    <a onclick="closeNav()" class="nav-link" href="index.html">Início</a>
-                    <a onclick="closeNav()" class="nav-link" href="#footer">Redes sociais</a>
+                    <a onclick="closeNav()" class="nav-link" href="index.html">Página Inicial</a>
+                    <a onclick="closeNav()" class="nav-link" href="#octopus">Sobre</a>
+                    <a onclick="closeNav()" class="nav-link" href="#download">Download</a>
                     <a onclick="closeNav()" class="nav-link" href="blog.html">Notícias</a>
                     <a onclick="closeNav()" class="nav-link" href="">Time</a>
                   </div>
@@ -36,6 +38,8 @@
         </header>
         <main>
             <br>
+            <div id="octopus" class="space-octopus">
+            </div>
             <div class="about">
                 <h1>Dr. Octopus School</h1>
             </div>
@@ -59,18 +63,7 @@
                 </figure>
 			</div>
             </span>
-            <br><br>
-
-            <section class="text-content">
-                <p>
-                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, 
-                    e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma 
-                    bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.<br>
-                    Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, 
-                    permanecendo essencialmente inalterado.
-                </p><br>
-            </section>
-            <br><br>
+            <br><br><br>
 
             <section id="prod" class="prod">
                 <h1>Customização!</h1> <br>
@@ -114,8 +107,28 @@
             </span>
             <br><br>
 
+            <section id="prod" class="prod">
+                    <h1>Leia Livros!</h1>
+                </div>
+                <br>
+                    <div class="book">
+                        <div class="text-content">
+                                <br>
+                                Cansado da agitação do mundo? que tal dar uma parada na biblioteca e relaxar lendo alguns livros?<br>
+                                Além de educativo, você terá acesso a alguns dos escritores mais clássicos do país!<br>
+                        </div>
+                        <div class="img-book">
+                            <img src="img/book.JPG">
+                        </div>
+                        <div class="text-content">
+                            Temos uma variedade enorme de livros e histórias disponíveis!<br>
+                            Como por exemplo poemas, contos, gibis e muito mais!!<br>
+                        </div>
+                    </div>
+            </section>
+
             <div class="about">
-                <button type="button" class="button">
+                <button type="button" class="button" id="download">
                     <span class="button__text">Download</span>
                     <span class="button__icon">
                         <ion-icon name="download-outline"></ion-icon>
