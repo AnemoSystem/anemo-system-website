@@ -219,10 +219,6 @@ main {
 	height: 100px;
 }
 
-.space-octopus {
-	height: 60px;
-}
-
 .about i {
     font-size: 4vw;
     padding: 30px;
@@ -378,6 +374,7 @@ footer .social-media {
     border: 3px solid #077a45;
     padding-right: 2.5rem;
     padding-left: 2.5rem;
+    background: #D4FFD5
 }
 
 .team-members {
