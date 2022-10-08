@@ -375,12 +375,18 @@ footer .social-media {
 .team-list {
     display: flex;
     flex-direction: column;
+    border: 2px solid #077a45;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
 }
 
 .team-members {
     line-height: 2rem;
     text-align: left;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #077a45;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
 }
 
 .team-icon {
