@@ -62,6 +62,9 @@ a {
 
 .nav-link:hover {
     color: #00DB8C;
+    animation-name: link;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 a:hover {
@@ -562,3 +565,17 @@ footer .social-media {
     }
 }
 }
+
+@keyframes link {
+    from {
+      font-size: 100%;
+    }
+
+    50% {
+      font-size: 115%;
+    }
+
+    to {
+      font-size: 100%;
+    }
+  }
