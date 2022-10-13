@@ -18,6 +18,10 @@ body {
     min-height: 100vh;
 }
 
+header {
+    background: -webkit-gradient(linear, left top, right top, from(#006025), to(#00BD48), to(#00A33F));
+}
+
 .prod {
     background: -webkit-gradient(linear, left top, right top, from(#02381F), to(#077a45), to(#09aa5f));
 	padding: 30px;
@@ -58,13 +62,6 @@ a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-}
-
-.nav-link:hover {
-    color: #00DB8C;
-    animation-name: link;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
 }
 
 a:hover {
@@ -142,11 +139,6 @@ header-blog img {
     width: 60px;
 }
 
-.navbar li {
-    padding: 0px 25px;
-    font-size: 1.3em;
-}
-
 img {
     width: 100%;
 }
@@ -188,6 +180,25 @@ img {
     align-items: center;
     padding: 5px 40px;
     text-align: center;
+}
+
+.navbar li {
+    padding: 0px 25px;
+    font-size: 1.3em;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.nav-link:hover {
+    color: #00DB8C;
+    animation-name: link;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.navbar img {
+    animation-name: fade;
+    animation-duration: 2s;
 }
 
 main {
@@ -577,5 +588,15 @@ footer .social-media {
 
     to {
       font-size: 100%;
+    }
+  }
+
+  @keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
   }
