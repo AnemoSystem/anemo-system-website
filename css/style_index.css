@@ -535,8 +535,13 @@ footer .social-media {
         padding-left: 3rem;
     }
 
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 @media(max-width: 700px){
@@ -649,7 +654,6 @@ footer .social-media {
 }
 
 /* Animations */
-
 @keyframes link {
     from {
       font-size: 100%;
