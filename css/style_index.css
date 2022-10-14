@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x:hidden
 }
 
 * {
@@ -506,6 +507,7 @@ footer .social-media {
 
     .img-section {
         width: 90%;
+        font-size: 2.5vw;
     }
 
     .about {
