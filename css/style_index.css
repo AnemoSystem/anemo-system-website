@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Teko&display=swap');
+/* ^^^^ Import Texts Fonts ^^^^ */
 
 html {
     scroll-behavior: smooth;
@@ -18,10 +19,42 @@ body {
     min-height: 100vh;
 }
 
+/* Header */
 header {
     background: -webkit-gradient(linear, left top, right top, from(#006025), to(#00BD48), to(#00A33F));
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 10px;
+    z-index: 2;
 }
 
+header ul {
+    display: flex;
+}
+
+header img {
+    width: 110px;
+}
+
+/* -- Blog -- */
+header-blog {
+    position:fixed;
+    width: 100%;
+    top: 0;
+    height: 7px;
+    z-index: 2;
+}
+
+header-blog ul {
+    display: flex;
+}
+
+header-blog img {
+    width: 60px;
+}
+
+/* Items Design */
 .prod {
     background: -webkit-gradient(linear, left top, right top, from(#02381F), to(#077a45), to(#09aa5f));
 	padding: 30px;
@@ -71,6 +104,7 @@ a:hover {
     animation-iteration-count: infinite;
 }
 
+/* Button Settings */
 .button {
   display: flex;
   height: 80px;
@@ -94,7 +128,7 @@ a:hover {
   background: #006e58;
 }
 
-/* !!! Usado no botão de download do jogo !!! */
+/* !!! Game Download Button !!! */
 
 .button__text,
 .button__icon {
@@ -110,42 +144,7 @@ a:hover {
   background: rgba(0, 0, 0, 0.08);
 }
 
-header {
-    position:fixed;
-    width: 100%;
-    top: 0;
-    height: 10px;
-    z-index: 2;
-}
-
-header ul {
-    display: flex;
-}
-
-header img {
-    width: 110px;
-}
-
-header-blog {
-    position:fixed;
-    width: 100%;
-    top: 0;
-    height: 7px;
-    z-index: 2;
-}
-
-header-blog ul {
-    display: flex;
-}
-
-header-blog img {
-    width: 60px;
-}
-
-img {
-    width: 100%;
-}
-
+/* Index Beginning */
 .img-background {
 	background-color: #005420;
     height: 650px;
@@ -178,6 +177,7 @@ img {
     opacity: 0.5;
 }
 
+/* Navbar */
 .navbar {
     background: -webkit-gradient(linear, left top, right top, from(#006025), to(#00BD48), to(#00A33F));
     display: flex;
@@ -206,6 +206,7 @@ img {
     animation-duration: 2s;
 }
 
+/* Main */
 main {
     margin-top: 125.3px;
     text-align: center;
@@ -214,6 +215,7 @@ main {
     scrollbar-width: none;
 }
 
+/* -- Blog -- */
 .main-blog {
     margin-top: 75.3px;
     text-align: center;
@@ -222,6 +224,7 @@ main {
     scrollbar-width: none;
 }
 
+/* Normal Title Format */
 .about {
     font-size: 2vw;
     font-weight: 700;
@@ -232,16 +235,16 @@ main {
     z-index: 1;
 }
 
-.space {
-	height: 100px;
-}
-
 .about i {
     font-size: 4vw;
     padding: 30px;
 }
 
+.space {
+	height: 100px;
+}
 
+/* Normal Text */
 .text-content {
     display: flex;
     align-items: top;
@@ -251,8 +254,7 @@ main {
     justify-content: center;
 }
 
-/*Reveal Text Slowly*/
-
+/* Reveal Text Slowly */
 .reveal {
     position: relative;
     opacity: 0;
@@ -312,6 +314,11 @@ main {
     }
   }
 
+  /* Images Organization */
+img {
+    width: 100%;
+}
+
 .type-images {
     display: flex;
     flex-direction: row;
@@ -331,11 +338,11 @@ main {
     margin: 20px;
 }
 
-/* Imagem direita e esquerda do jogo (pagina de Download) */
+/* Download Page */
 
 .left {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     position: relative;
     font-size: 1.4vw;
     text-align: center;
@@ -344,19 +351,12 @@ main {
 }
 
 .right {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     position: relative;
     font-size: 1.4vw;
     text-align: center;
     left: 15%;
-}
-
-.right-custom {
-    width: 40%;
-    height: 40%;
-    position: relative;    
-    left: 10%;
 }
 
 .right-text {
@@ -382,7 +382,7 @@ main {
     margin-bottom: 60px;
 }
 
-
+/* Footer */
 footer {
 	padding: 30px;
     text-align: center;
@@ -397,6 +397,7 @@ footer .social-media {
     display: none;
 }
 
+/* Side Navbar */
 .sidenav {
     height: 100%;
     width: 0; 
@@ -432,6 +433,7 @@ footer .social-media {
     margin-left: 50px;
 }
 
+/* Team Tab */
 .team {
     height: 80%;
     width: 90%;
@@ -475,6 +477,7 @@ footer .social-media {
     padding-top: 1rem;
 }
 
+/* Mobile Responsive */
 @media(max-width: 1200px){
     .text-content {
         font-size: 1.3em;
@@ -483,7 +486,7 @@ footer .social-media {
         margin-right: auto;
     }
 
-    .right-text, .left, .right, .right-custom {
+    .right-text, .left, .right {
         font-size: 1.3em;
         margin-left: 5%;
         margin-right: 5%;
@@ -578,7 +581,7 @@ footer .social-media {
         margin-right: auto;
     }
 
-    .ty-2 .right-custom{
+    .ty-2 .right{
         width: 100%;
         left: 0%;
         padding: 15px;
@@ -638,6 +641,8 @@ footer .social-media {
     }
 }
 }
+
+/* Animations */
 
 @keyframes link {
     from {
