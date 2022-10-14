@@ -366,7 +366,7 @@ img {
     position: relative;
     font-size: 1.4vw;
     text-align: center;
-    left: 8%;
+    left: 15%;
 }
 
 .book {
@@ -573,6 +573,10 @@ footer .social-media {
         padding: 10px;
         font-size: 3.3vw;
         width: 80%;
+    }
+
+    .ty-2 {
+        flex-direction: column;
     }
 
     .ty-2 .left{
