@@ -4,7 +4,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x:hidden
+    overflow-x: hidden;
 }
 
 * {
@@ -26,7 +26,6 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    height: 10px;
     z-index: 2;
 }
 
@@ -212,17 +211,6 @@ main {
     margin-top: 125.3px;
     text-align: center;
     min-height: calc(100vh -947px -947px);
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-}
-
-/* -- Blog -- */
-.main-blog {
-    margin-top: 75.3px;
-    text-align: center;
-    min-height: calc(100vh -947px -947px);
-    scroll-behavior: smooth;
-    scrollbar-width: none;
 }
 
 /* Normal Title Format */
@@ -243,6 +231,17 @@ main {
 
 .space {
 	height: 100px;
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+.space-line {
+    width: 1.5px;
+    height: 90px;
+    background: linear-gradient(180deg,#02381F,#09aa5f);
 }
 
 /* Normal Text */
