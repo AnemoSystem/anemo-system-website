@@ -213,13 +213,6 @@ main {
     min-height: calc(100vh -947px -947px);
 }
 
-/* -- Blog -- */
-.main-blog {
-    margin-top: 75.3px;
-    text-align: center;
-    min-height: calc(100vh -947px -947px);
-}
-
 /* Normal Title Format */
 .about {
     font-size: 2vw;
@@ -238,6 +231,17 @@ main {
 
 .space {
 	height: 100px;
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+.space-line {
+    width: 1.5px;
+    height: 90px;
+    background: linear-gradient(180deg,#02381F,#09aa5f);
 }
 
 /* Normal Text */
