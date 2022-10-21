@@ -36,7 +36,7 @@ window.addEventListener("scroll", reveal);
 
 /* Title Animation takes a while to stop */
 $(document).ready(function () {
-  const title = document.querySelectorAll('#A, #N, #E, #M, #O, #S, #Y, #S2, #T, #E2, #M2');
+  const title = document.querySelectorAll('#A, #N, #E, #M, #O, #S, #Y, #S2, #T, #E2, #M2, a');
 
   $(title).on("animationiteration", function () {
     $(this).removeClass("animated");

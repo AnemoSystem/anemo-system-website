@@ -97,11 +97,13 @@ a {
     font-weight: bold;
 }
 
+a.animated {
+    animation: link 2s infinite;
+}
+
 a:hover {
     color: #006025;
-    animation-name: link;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation: link 2s infinite;
 }
 
 /* Button Settings */
