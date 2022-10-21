@@ -145,6 +145,118 @@ a:hover {
 }
 
 /* Index Beginning */
+.AnemoSystem {
+    height: 30vw;
+    width: 100%;
+    margin-top: 10em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+.Anemo-normal {
+    overflow: hidden;
+}
+
+.AnemoSystem img {
+    height: 100%;
+    width: 140px;
+} 
+
+.AnemoSystem .Anemo-normal img {
+    height: 100%;
+    width: 420px;
+    margin-top: 3em;
+} 
+
+.Anemo, .System {
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.Anemo {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    animation: anemo 4s ease-in;
+}
+
+/* Inside Anemo */
+#A img {
+    
+}
+
+#A:hover {
+    animation: link 2s ease-in infinite;
+}
+
+#N img {
+    
+}
+
+#E img {
+    
+}
+
+#M img {
+    height: 110%;
+    width: 200px;
+    padding-bottom: 12px;
+}
+
+#O img {
+    height: 105%;
+    width: 150px;
+    padding-bottom: 5px;
+}
+
+.System {
+    animation: system 4s ease-in;
+}
+
+/* Inside System */
+#S img {
+    padding-top: 10px;
+    width: 160px;
+    
+}
+
+#Y img {
+    padding-top: 20px;
+}
+
+#S2 img {
+    padding-top: 10px;
+    padding-right: 20px;
+    
+}
+
+#T img {
+    width: 180px;
+    height: 110%;
+    padding-bottom: 20px;
+}
+
+#E2 img {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+#M2 img {
+    width: 240px;
+    padding-top: 17px;
+}
+
+
+/* School Game Beginning */
 .img-background {
 	background-color: #005420;
     height: 650px;
@@ -191,7 +303,7 @@ a:hover {
     padding: 0px 25px;
     font-size: 1.3em;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 4s;
 }
 
 .nav-link:hover {
@@ -203,7 +315,7 @@ a:hover {
 
 .navbar img {
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 4s;
 }
 
 /* Main */
@@ -479,6 +591,21 @@ footer .social-media {
 
 /* Mobile Responsive */
 @media(max-width: 1200px){
+
+    .Anemo, .System {
+        overflow: hidden;
+    }
+
+    .Anemo-normal {
+        overflow: visible;
+        animation: fade 4s ease-in;
+        margin-top: 20px;
+    }
+
+    #horizontal-line {
+        margin-top: 50px;
+    }
+
     .text-content {
         font-size: 1.3em;
         width: 100%;
@@ -558,6 +685,20 @@ footer .social-media {
 
     #myIcon {
         display: inline;
+    }
+
+    .Anemo, .System {
+        overflow: hidden;
+    }
+
+    .Anemo-normal {
+        overflow: visible;
+        animation: fade 4s ease-in;
+        margin-top: 20px;
+    }
+
+    #horizontal-line {
+        margin-top: 50px;
     }
 
     .text-content {
@@ -667,6 +808,34 @@ footer .social-media {
     }
   }
 
+  @keyframes anemo {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    
+  }
+
+  @keyframes system {
+
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    
+  }
+
   @keyframes fade {
     from {
         opacity: 0;
@@ -676,5 +845,81 @@ footer .social-media {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+  }
+
+  /* Loading */
+.load-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #09aa5f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.load {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 4px solid #006025;
+    border-radius: 100px;
+    top: 50%;
+    animation: load 2s infinite ease;
+}
+
+.load-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #006025;
+    animation: load-inner 2s infinite ease-in;
+  }
+
+  @keyframes load {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    25% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    75% {
+      transform: rotate(360deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes load-inner {
+    0% {
+      height: 0%;
+    }
+    
+    25% {
+      height: 0%;
+    }
+    
+    50% {
+      height: 100%;
+    }
+    
+    75% {
+      height: 100%;
+    }
+    
+    100% {
+      height: 0%;
     }
   }

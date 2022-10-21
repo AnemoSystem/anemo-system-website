@@ -14,6 +14,13 @@
         <title>Anemo System</title>
     </head>
     <body>
+        <div class="load-wrapper">
+            <div class="load">
+                <span class="load-inner">
+                </span>
+            </div>
+        </div>
+
         <header>
             <nav class="navbar">
                 <a href="index.html" style="animation-name: none;">
@@ -41,15 +48,54 @@
             </nav>
         </header>
         <main>
-            <section class="img-background">
-                <span class="text-img-background">
-                    <h1>Construindo uma nova geração de estudantes!</h1>
-                </span>
-                <div id="img1"></div>
+            <section class="AnemoSystem">
+                <!--In case it's on the mobile-->
+                <div class="Anemo-normal">
+                    <img src="img/Anemo-logo/Anemo-System.jpg" alt="Anemo System" loading="lazy">
+                </div>
+
+                <div class="Anemo">
+                    <figure id="A">
+                        <img src="img/Anemo-logo/A.jpg" alt="A" loading="lazy">
+                    </figure>
+                    <figure id="N">
+                        <img src="img/Anemo-logo/N.jpg" alt="N" loading="lazy">
+                    </figure>
+                    <figure id="E">
+                        <img src="img/Anemo-logo/E.jpg" alt="E" loading="lazy">
+                    </figure>
+                    <figure id="M">
+                        <img src="img/Anemo-logo/M.jpg" alt="M" loading="lazy">
+                    </figure>
+                    <figure id="O">
+                        <img src="img/Anemo-logo/O.jpg" alt="O" loading="lazy">
+                    </figure>
+                </div>
+
+                <div class="System">
+                    <figure id="S">
+                        <img src="img/Anemo-logo/S.jpg" alt="S" loading="lazy">
+                    </figure>
+                    <figure id="Y">
+                        <img src="img/Anemo-logo/Y.jpg" alt="Y" loading="lazy">
+                    </figure>
+                    <figure id="S2">
+                        <img src="img/Anemo-logo/S-2.jpg" alt="S" loading="lazy">
+                    </figure>
+                    <figure id="T">
+                        <img src="img/Anemo-logo/T.png" alt="T" loading="lazy">
+                    </figure>
+                    <figure id="E2">
+                        <img src="img/Anemo-logo/E-2.png" alt="E" loading="lazy">
+                    </figure>
+                    <figure id="M2">
+                        <img src="img/Anemo-logo/M-2.jpg" alt="M" loading="lazy">
+                    </figure>
+                </div>
             </section>
 
 		<div id="about" class="space">
-            <div class="space-line">
+            <div class="space-line" id="horizontal-line" style="width: 120px; height: 2px; background: linear-gradient(90deg,#02381F,#09aa5f);">
             </div>
 		</div>
 
@@ -108,6 +154,7 @@
             </div>
             <p>2022 © Anemo System<br><!-- texto que vai embaixo do copyright --></p>
         </footer>
+        
         <script type="text/javascript">
             function openNav() {
                 document.getElementById("mySidenav").style.width = "250px";
@@ -116,6 +163,12 @@
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
             } 
+        </script>
+
+        <script>
+            $(window).on("load", function(){
+                $(".load-wrapper").fadeOut("slow");
+            });
         </script>
     </body>
 </html>
