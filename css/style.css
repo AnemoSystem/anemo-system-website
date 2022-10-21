@@ -145,6 +145,41 @@ a:hover {
 }
 
 /* Index Beginning */
+.AnemoSystem {
+    height: 30vw;
+    width: 100%;
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.AnemoSystem img {
+    height: 100%;
+    width: 140px;
+} 
+
+.Anemo, .System {
+    display: flex;
+    flex-direction: row;
+}
+
+.Anemo {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.System {
+    
+}
+
+
+/* School Game Beginning */
 .img-background {
 	background-color: #005420;
     height: 650px;
