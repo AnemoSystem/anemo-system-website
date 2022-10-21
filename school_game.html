@@ -14,6 +14,14 @@
         <title>Dr Octopus School - Anemo System</title>
     </head>
     <body>
+        <div class="load-wrapper active">
+            <div class="load">
+                <span class="load">
+                    <span class="load"> </span>
+                </span>
+            </div>
+        </div>
+
         <header>
             <nav class="navbar">
                 <a href="index.html" style="animation-name: none;">
@@ -165,6 +173,12 @@
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
             } 
+        </script>
+
+        <script>
+            $(window).on("load", function(){
+                $(".load-wrapper").fadeOut("slow");
+            });
         </script>
     </body>
 </html>

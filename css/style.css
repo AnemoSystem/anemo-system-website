@@ -195,21 +195,88 @@ a:hover {
 }
 
 #A:hover {
-    animation: link 2s ease-in infinite;
+    animation: A 1.5s ease-in infinite;
 }
+
+@keyframes A {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
 
 #N img {
     
+}
+
+#N:hover {
+    animation: N 1.5s ease-in infinite;
+}
+
+@keyframes N {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 #E img {
     
 }
 
+#E:hover {
+    animation: E 1.5s ease-in infinite;
+}
+
+@keyframes E {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 #M img {
     height: 110%;
     width: 200px;
     padding-bottom: 12px;
+}
+
+#M:hover {
+    animation: M 3s ease-in infinite;
+}
+
+@keyframes M {
+    0% {
+        transform: rotateY(0turn);
+    }
+    25%% {
+        transform: rotateY(0.5turn);
+    }
+    50% {
+        transform: rotateY(1turn);
+    }
+    75% {
+        transform: rotateY(0.5turn);
+    }
+    100% {
+        transform: rotateY(0turn);
+    }
 }
 
 #O img {
