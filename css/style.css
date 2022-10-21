@@ -594,7 +594,12 @@ footer .social-media {
 
     .Anemo-normal {
         overflow: visible;
-        animation: anemo 4s ease-in;
+        animation: fade 4s ease-in;
+        margin-top: 20px;
+    }
+
+    #horizontal-line {
+        margin-top: 50px;
     }
 
     .text-content {
