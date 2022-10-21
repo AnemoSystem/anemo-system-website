@@ -157,6 +157,11 @@ a:hover {
     margin-right: auto;
     left: 0;
     right: 0;
+    position: relative;
+}
+
+.Anemo-normal {
+    overflow: hidden;
 }
 
 .AnemoSystem img {
@@ -164,9 +169,16 @@ a:hover {
     width: 140px;
 } 
 
+.AnemoSystem .Anemo-normal img {
+    height: 100%;
+    width: 420px;
+    margin-top: 3em;
+} 
+
 .Anemo, .System {
     display: flex;
     flex-direction: row;
+    overflow: visible;
 }
 
 .Anemo {
@@ -194,7 +206,9 @@ a:hover {
 }
 
 #O img {
-    
+    height: 105%;
+    width: 150px;
+    padding-bottom: 5px;
 }
 
 .System {
@@ -230,7 +244,8 @@ a:hover {
 }
 
 #M2 img {
-    width: 230px;
+    width: 240px;
+    padding-top: 17px;
 }
 
 
@@ -569,6 +584,15 @@ footer .social-media {
 
 /* Mobile Responsive */
 @media(max-width: 1200px){
+
+    .Anemo, .System {
+        overflow: hidden;
+    }
+
+    .Anemo-normal {
+        overflow: visible;
+    }
+
     .text-content {
         font-size: 1.3em;
         width: 100%;
@@ -648,6 +672,14 @@ footer .social-media {
 
     #myIcon {
         display: inline;
+    }
+
+    .Anemo, .System {
+        overflow: hidden;
+    }
+
+    .Anemo-normal {
+        overflow: visible;
     }
 
     .text-content {
