@@ -194,6 +194,10 @@ a:hover {
     
 }
 
+#A:hover {
+    animation: link 2s ease-in infinite;
+}
+
 #N img {
     
 }
@@ -841,5 +845,81 @@ footer .social-media {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+  }
+
+  /* Loading */
+.load-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #09aa5f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.load {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 4px solid #006025;
+    border-radius: 100px;
+    top: 50%;
+    animation: load 2s infinite ease;
+}
+
+.load-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #006025;
+    animation: load-inner 2s infinite ease-in;
+  }
+
+  @keyframes load {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    25% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    75% {
+      transform: rotate(360deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes load-inner {
+    0% {
+      height: 0%;
+    }
+    
+    25% {
+      height: 0%;
+    }
+    
+    50% {
+      height: 100%;
+    }
+    
+    75% {
+      height: 100%;
+    }
+    
+    100% {
+      height: 0%;
     }
   }

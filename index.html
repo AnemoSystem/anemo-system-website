@@ -14,6 +14,13 @@
         <title>Anemo System</title>
     </head>
     <body>
+        <div class="load-wrapper">
+            <div class="load">
+                <span class="load-inner">
+                </span>
+            </div>
+        </div>
+
         <header>
             <nav class="navbar">
                 <a href="index.html" style="animation-name: none;">
@@ -147,6 +154,7 @@
             </div>
             <p>2022 © Anemo System<br><!-- texto que vai embaixo do copyright --></p>
         </footer>
+        
         <script type="text/javascript">
             function openNav() {
                 document.getElementById("mySidenav").style.width = "250px";
@@ -155,6 +163,12 @@
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
             } 
+        </script>
+
+        <script>
+            $(window).on("load", function(){
+                $(".load-wrapper").fadeOut("slow");
+            });
         </script>
     </body>
 </html>
