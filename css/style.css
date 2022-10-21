@@ -161,6 +161,10 @@ a:hover {
     position: relative;
 }
 
+.AnemoSystem.animated {
+    animation-iteration-count: infinite;
+  }
+
 .Anemo-normal {
     overflow: hidden;
 }
@@ -190,8 +194,8 @@ a:hover {
 }
 
 /* Inside Anemo */
-#A img {
-    
+#A.animated {
+    animation: A 1.5s ease-in infinite;
 }
 
 #A:hover {
@@ -211,8 +215,8 @@ a:hover {
 }
 
 
-#N img {
-    
+#N.animated {
+    animation: N 1.5s ease-in infinite;
 }
 
 #N:hover {
@@ -231,8 +235,8 @@ a:hover {
     }
 }
 
-#E img {
-    
+#E.animated {
+    animation: E 1.5s ease-in infinite;
 }
 
 #E:hover {
@@ -257,8 +261,12 @@ a:hover {
     padding-bottom: 12px;
 }
 
+#M.animated {
+    animation: M 2s ease-in infinite;
+}
+
 #M:hover {
-    animation: M 3s ease-in infinite;
+    animation: M 2s ease-in infinite;
 }
 
 @keyframes M {
@@ -283,6 +291,26 @@ a:hover {
     height: 105%;
     width: 150px;
     padding-bottom: 5px;
+}
+
+#O.animated {
+    animation: O 1.5s ease-in infinite;
+}
+
+#O:hover {
+    animation: O 1.5s ease-in infinite;
+}
+
+@keyframes O {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 .System {
