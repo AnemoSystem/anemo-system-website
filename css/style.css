@@ -174,8 +174,63 @@ a:hover {
     margin-top: 30px;
 }
 
+/* Inside Anemo */
+#A img {
+    
+}
+
+#N img {
+    
+}
+
+#E img {
+    
+}
+
+#M img {
+    height: 110%;
+    width: 200px;
+    padding-bottom: 12px;
+}
+
+#O img {
+    
+}
+
 .System {
     
+}
+
+/* Inside System */
+#S img {
+    padding-top: 10px;
+    width: 160px;
+    
+}
+
+#Y img {
+    padding-top: 20px;
+}
+
+#S2 img {
+    padding-top: 10px;
+    padding-right: 20px;
+    
+}
+
+#T img {
+    width: 180px;
+    height: 110%;
+    padding-bottom: 20px;
+}
+
+#E2 img {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+#M2 img {
+    width: 230px;
 }
 
 
