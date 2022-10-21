@@ -1,4 +1,4 @@
-/*Navbar Mobile*/
+/* Navbar Mobile */
 $(document).ready(function(){
   $("a").on('click', function(event) {
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
   });
 });
 
-/*Reveal text*/
+/* Reveal text */
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -33,3 +33,18 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+/* Title Animation takes a while to stop */
+$(document).ready(function () {
+  const title = document.querySelectorAll('#A, #N, #E, #M, #O, #S, #Y, #S2, #T, #E2, #M2, a');
+
+  $(title).on("animationiteration", function () {
+    $(this).removeClass("animated");
+    console.log("out");
+  });
+
+  $(title).hover(function () {
+    $(this).addClass("animated");
+    console.log("over");
+  });
+});
