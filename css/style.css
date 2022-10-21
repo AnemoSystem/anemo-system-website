@@ -149,6 +149,7 @@ a:hover {
     height: 30vw;
     width: 100%;
     margin-top: 10em;
+    margin-bottom: 5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -179,11 +180,13 @@ a:hover {
     display: flex;
     flex-direction: row;
     overflow: visible;
+    cursor: pointer;
 }
 
 .Anemo {
     margin-bottom: 30px;
     margin-top: 30px;
+    animation: anemo 4s ease-in;
 }
 
 /* Inside Anemo */
@@ -212,7 +215,7 @@ a:hover {
 }
 
 .System {
-    
+    animation: system 4s ease-in;
 }
 
 /* Inside System */
@@ -296,7 +299,7 @@ a:hover {
     padding: 0px 25px;
     font-size: 1.3em;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 4s;
 }
 
 .nav-link:hover {
@@ -308,7 +311,7 @@ a:hover {
 
 .navbar img {
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 4s;
 }
 
 /* Main */
@@ -591,6 +594,11 @@ footer .social-media {
 
     .Anemo-normal {
         overflow: visible;
+        animation: anemo 4s ease-in;
+    }
+
+    .space-line {
+        overflow: visible;
     }
 
     .text-content {
@@ -679,6 +687,11 @@ footer .social-media {
     }
 
     .Anemo-normal {
+        overflow: visible;
+        animation: anemo 4s ease-in;
+    }
+
+    .space-line {
         overflow: visible;
     }
 
@@ -787,6 +800,34 @@ footer .social-media {
     to {
       font-size: 100%;
     }
+  }
+
+  @keyframes anemo {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    
+  }
+
+  @keyframes system {
+
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    
   }
 
   @keyframes fade {
