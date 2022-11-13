@@ -1,3 +1,12 @@
+/* Navbar */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+
 /* Navbar Mobile */
 $(document).ready(function(){
   $("a").on('click', function(event) {
@@ -47,4 +56,9 @@ $(document).ready(function () {
     $(this).addClass("animated");
     console.log("over");
   });
+});
+
+/* Loading */
+$(window).on("load", function(){
+  $(".load-wrapper").fadeOut("slow");
 });
