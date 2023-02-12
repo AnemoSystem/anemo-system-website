@@ -80,5 +80,6 @@ $(document).ready(function () {
   btn.addEventListener('mouseover', () => {
     console.log('Você não deveria estar vendo essa mensagem');
     btn.style.left = Math.floor(Math.random() * (maxWidth + 1)) + 'px';
+    btnbox.style.height = Math.floor(Math.random() * (maxHeight + 1)) + 'px';
   })
 })
