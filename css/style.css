@@ -897,7 +897,7 @@ footer .social-media {
     }
 
     .btnbox {
-        overflow: none;
+        visibility: hidden;
     }
 }
 
@@ -1018,7 +1018,7 @@ footer .social-media {
     }
 
     .btnbox {
-        overflow: none;
+        visibility: hidden;
     }
 
 @media(max-width: 600px){
