@@ -141,7 +141,7 @@ a:hover {
     justify-content: center;
     width: 100%;
     height: 200px;
-    max-height: 200px;
+    max-height: 250px;
 }
 
 .button__text,
@@ -820,7 +820,7 @@ footer .social-media {
 @media(max-width: 1200px){
 
     .Anemo, .System {
-        overflow: hidden;
+        overflow: none;
     }
 
     .Anemo-normal {
@@ -894,6 +894,10 @@ footer .social-media {
 
     .sidenav a {
         font-size: 18px;
+    }
+
+    .btnbox {
+        overflow: none;
     }
 }
 
@@ -1011,6 +1015,10 @@ footer .social-media {
     .team {
         padding-left: 1.5rem;
         width: 100%;
+    }
+
+    .btnbox {
+        overflow: none;
     }
 
 @media(max-width: 600px){
