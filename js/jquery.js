@@ -62,3 +62,23 @@ $(document).ready(function () {
 $(window).on("load", function(){
   $(".load-wrapper").fadeOut("slow");
 });
+
+/* Button */
+$(document).ready(function () {
+  const btn = document.getElementById('download');
+  const btnbox = document.getElementById('btnbox');
+  const buttonHeight = 50;
+  const buttonWidth = 150;
+  const maxWidth = window.innerWidth - buttonWidth;
+  const maxHeight = window.innerHeight - buttonHeight;
+
+  btn.addEventListener('click', () => {
+    alert('Bela tentativa');
+    window.close();
+  })
+
+  btn.addEventListener('mouseover', () => {
+    console.log('Você não deveria estar vendo essa mensagem');
+    btn.style.left = Math.floor(Math.random() * (maxWidth + 1)) + 'px';
+  })
+})

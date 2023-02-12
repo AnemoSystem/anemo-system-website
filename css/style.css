@@ -120,6 +120,7 @@ a:hover {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  z-index: 10;
 }
 
 .button:hover {
@@ -131,6 +132,16 @@ a:hover {
 }
 
 /* !!! Game Download Button !!! */
+
+.btnbox {
+    font-size: 2vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
 
 .button__text,
 .button__icon {
@@ -144,6 +155,11 @@ a:hover {
 .button__icon {
   font-size: 1.5em;
   background: rgba(0, 0, 0, 0.08);
+}
+
+#download {
+    position: absolute;
+    white-space: nowrap;
 }
 
 /* Index Beginning */
@@ -1069,7 +1085,7 @@ footer .social-media {
       height: 100%;
       top: 0;
       left: 0;
-      z-index: 3;
+      z-index: 100;
     }
 
     .load {
