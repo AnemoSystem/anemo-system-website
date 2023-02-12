@@ -897,6 +897,7 @@ footer .social-media {
     }
 
     .btnbox {
+        height: 0px;
         visibility: hidden;
     }
 }
@@ -1018,6 +1019,7 @@ footer .social-media {
     }
 
     .btnbox {
+        height: 0px;
         visibility: hidden;
     }
 
