@@ -1,7 +1,8 @@
-<h1>Anemo System's Site</h1><br>
-This site is where we would update and inform our users about news and elements of our games, including <b>Dr. Octopus School</b><br>
+<h1>Anemo System's Site 🍃</h1>
+The idea of the site is very simple!<br>
+It's where we would update and inform our users about news of our games and company, including <b>Dr. Octopus School</b><br><br>
 
-<h2> Site Elements </h2><br>
+<h2> Site Elements </h2>
 The main page introducted our company and apresented all our projects, then there's the "Team" tab, who's intended to introduce all 
 members of our team and talk about what we made, alongside some 'curiosities'.<br><br>
 Then there's the "Blog" tab, where we would link to our blogspot and talk about news and updates of our projects<br>
