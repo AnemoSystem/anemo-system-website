@@ -1,24 +1,11 @@
 /* Navbar */
 function openNav() {
   const navbar = document.querySelector("#mySidenav");
-  const icon = document.querySelector("#myIcon");
-  const click = [icon, navbar];
   navbar.style.width = "250px";
 
-  function toggleNav() {
-    if (navbar.style.width === "250px") {
-      navbar.style.width = "0";
-      removeListeners();
-    } else {
-      navbar.style.width = "250px";
-      click.forEach(elem => elem.addEventListener('click', closeNav));
-    }
-  }
-
-  function removeListeners() {
-    click.forEach(elem => elem.removeEventListener('click', closeNav));
-  }
-  click.forEach(elem => elem.addEventListener('click', toggleNav));
+  navbar.addEventListener('click', () => {
+    navbar.style.width = "0";
+  })
 }
 
 /* Navbar Mobile */
