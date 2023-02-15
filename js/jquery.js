@@ -1,11 +1,25 @@
 /* Navbar */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+  const navbar = document.querySelector("#mySidenav");
+  const icon = document.querySelector("#myIcon");
+  const click = [icon, navbar];
+  navbar.style.width = "250px";
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
+  function toggleNav() {
+    if (navbar.style.width === "250px") {
+      navbar.style.width = "0";
+      removeListeners();
+    } else {
+      navbar.style.width = "250px";
+      click.forEach(elem => elem.addEventListener('click', closeNav));
+    }
+  }
+
+  function removeListeners() {
+    click.forEach(elem => elem.removeEventListener('click', closeNav));
+  }
+  click.forEach(elem => elem.addEventListener('click', toggleNav));
+}
 
 /* Navbar Mobile */
 $(document).ready(function(){
@@ -49,12 +63,10 @@ $(document).ready(function () {
 
   $(title).on("animationiteration", function () {
     $(this).removeClass("animated");
-    console.log("out");
   });
 
   $(title).hover(function () {
     $(this).addClass("animated");
-    console.log("over");
   });
 });
 
@@ -83,6 +95,3 @@ $(document).ready(function () {
     btnbox.style.height = Math.floor(Math.random() * (maxHeight + 1)) + 'px';
   })
 })
-
-
-
