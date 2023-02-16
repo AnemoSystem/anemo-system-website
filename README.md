@@ -30,7 +30,7 @@ The site even has some exclusivities between different platforms! (For example: 
 'Dr. Octopus School' has his own page, wich is focused on present all elements of the game (wich are followed by images)
 and explain to the viewer how those elements impacted the game! You should give it a look!<br><br>
 
-<h3>See about our game here: <a href="https://github.com/GGGCD-TCC/dr-octopus-school"> Dr. Octopus Shcool</a></h3><br>
+<h3>See about our game here: <a href="https://github.com/GGGCD-TCC/dr-octopus-school"> Dr. Octopus School</a></h3><br>
  <a href="https://gggcd-tcc.github.io/anemo-system-website/">
   <img src="img/logo.png" alt="AnemoSystem Logo" loading="lazy" style="width:100px; height:100px;">
  </a>
